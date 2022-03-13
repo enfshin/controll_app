@@ -5,8 +5,9 @@ var g_Name = "";
 var g_Email = "";
 var g_Phone = "";
 var g_ValidDate = "";
-// var BaseUrl = 'https://go81tknrq2.execute-api.ap-northeast-2.amazonaws.com/adscope_test/api'; //테스트용
-var BaseUrl = 'https://og5nw86ee5.execute-api.ap-northeast-2.amazonaws.com/adscope/api'; //정식용
+
+var BaseUrl = 'https://5c4tm37cc5.execute-api.ap-northeast-2.amazonaws.com/liferoi/api'; //테스트용
+// var BaseUrl = 'https://op8ztrevni.execute-api.ap-northeast-2.amazonaws.com/liferoi/api'; //정식용
 
 
 const int largeScreenSize = 1200;
