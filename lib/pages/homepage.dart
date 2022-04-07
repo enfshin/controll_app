@@ -1,5 +1,6 @@
 import 'package:controll_app/constants/my_style.dart';
 import 'package:controll_app/pages/recharge_page.dart';
+import 'package:controll_app/pages/stop_all_basic.dart';
 import 'package:controll_app/pages/valid_conduct_page.dart';
 import 'package:controll_app/widgets/custom/custom_main_appbar.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,8 @@ class HomePageState extends State<HomePage> {
 
   List<Widget> _widgetOptions = <Widget>[
     ValidConductPage(),
-    ReChargePage()
+    ReChargePage(),
+    StopBasicPage()
   ];
 
   @override
@@ -45,6 +47,10 @@ class HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: Icon(MdiIcons.calendarCheck),
               label: '재충전',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(MdiIcons.stopCircleOutline),
+              label: '베이직 정지',
             ),
           ],
           currentIndex: _selectedIndex,
