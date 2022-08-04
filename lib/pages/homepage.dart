@@ -1,4 +1,5 @@
 import 'package:controll_app/constants/my_style.dart';
+import 'package:controll_app/pages/promode_run_log.dart';
 import 'package:controll_app/pages/recharge_page.dart';
 import 'package:controll_app/pages/stop_all_basic.dart';
 import 'package:controll_app/pages/valid_conduct_page.dart';
@@ -25,6 +26,7 @@ class HomePageState extends State<HomePage> {
   }
 
   List<Widget> _widgetOptions = <Widget>[
+    ProRunPage(),
     ValidConductPage(),
     ReChargePage(),
     StopBasicPage()
@@ -40,6 +42,10 @@ class HomePageState extends State<HomePage> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(MdiIcons.run),
+              label: '프로 확인',
+            ),
             BottomNavigationBarItem(
               icon: Icon(MdiIcons.calendarToday),
               label: '사용기한',
